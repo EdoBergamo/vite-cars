@@ -19,7 +19,7 @@ const router = createRouter({
             component: CarsList
         },
         {
-            "path" : "/car",
+            "path" : "/car/:id",
             "name" : "SingleCar",
             component: SingleCar
         },

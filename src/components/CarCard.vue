@@ -51,6 +51,8 @@ export default {
 </template>
     
 <style  lang="scss" scoped>
-    
+    .card{
+        height: 500px
+    }
 </style>
     
