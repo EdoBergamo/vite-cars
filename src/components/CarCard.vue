@@ -31,7 +31,7 @@ export default {
 </script>
 <template lang="">
     <div class="col-lg-4 col-md-6 col-3 ">
-        <router-link :to="{name: 'SingleCar', params: { id: car.id } }" >
+        <router-link :to="{name: 'SingleCar', params: { id: car.id } }" class="text-deco" >
             <div class="card mt-4">
                 <img :src="getUrlImage()" alt="" class="card-img-top">
                     <div class="card-body">
@@ -40,7 +40,7 @@ export default {
                         
                         <h5 class="my-2"> Prezzo </h5>{{ car.prezzo }}€
                         
-                        <!-- <p>{{createExcerpt() }}</p> -->
+                       
                     </div>
                 </div>
             </router-link> 
@@ -52,7 +52,11 @@ export default {
     
 <style  lang="scss" scoped>
     .card{
-        height: 500px
+        height: 500px;
+        background-color: azure
+    }
+    .text-deco{
+        text-decoration: none;
     }
 </style>
     

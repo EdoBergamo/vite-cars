@@ -47,8 +47,8 @@ export default {
 
                 <h1>Boolcars</h1>
                 <h4>Raccolta delle auto </h4>
-                <button class="btn btn-sm btn-primary mx-3" :class="currentPage == 1 ? `disabled` : ``" @click="getCars(currentPage - 1)">Indietro</button>
-                <button class="btn btn-sm btn-primary"  :class="currentPage == lastPage ? `disabled` : ``" @click="getCars(currentPage + 1)">Avanti</button>
+                <button class="btn btn-sm  mx-3" :class="currentPage == 1 ? `disabled` : ``" @click="getCars(currentPage - 1)"> < </button>
+                <button class="btn btn-sm  " :class="currentPage == lastPage ? `disabled` : ``" @click="getCars(currentPage + 1)"> > </button>
             </div>
         </div>        
         <div class="row">
@@ -58,6 +58,11 @@ export default {
 </template>
     
 <style  lang="scss" scoped>
-
+button{
+    background-color:  rgb(81, 81, 247);
+}
+.disabled{
+    background-color:  rgb(81, 81, 247);
+}
   
 </style>
