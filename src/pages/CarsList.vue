@@ -13,7 +13,7 @@ export default {
     data(){
         return {
             store,
-            projects: [],
+            cars: [],
             currentPage: 1,
             lastPage: null
 
@@ -30,7 +30,7 @@ export default {
                     page : page_number
                 }
             }).then((response) => {
-               this.projects = response.data.results.data;
+               this.cars = response.data.results.data;
                this.currentPage = response.data.results.current_page;
                this.lastPage = response.data.results.last_page;
 

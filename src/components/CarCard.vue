@@ -15,10 +15,10 @@ export default {
             let image;
 
             if(this.car.cover_image != null) {
-                image = "/storage/" + this.project.cover_image;
+                image = "/storage/" + this.car.cover_image;
             }
             else {
-                image = "/img/placeholder.png"
+                image = "/img/placeholder.jpg"
             }
 
             return `${this.store.baseUrl}${image}`
@@ -36,9 +36,10 @@ export default {
                 <div class="card-body">
                     <h4> Nome Auto: </h4>{{ car.name }}
                     <h4 class="my-2"> Modello: </h4>{{ car.modello }}
-                    <h5 class="my-2"> Prezzo </h5>{{ Prezzo }} 
-                    <!-- <h5 class = "my-2">Tipologia Progetto: </h5>{{ car.type.name}} <hr><hr> -->
-                    <!-- <h5> {{ project.technologies}}</h5> -->
+                    
+                    <h5 class="my-2"> Prezzo </h5>{{ car.prezzo }} 
+                    
+                    
                 </div>
             </div>
         </div>

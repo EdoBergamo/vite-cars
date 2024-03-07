@@ -9,7 +9,7 @@ export const store = reactive({
         },
         {
             name : "Cars",
-            label: "Car"
+            label: "Cars"
         }
     ]
 })
