@@ -38,7 +38,7 @@ export default {
                         <h4> Nome Auto: </h4>{{ car.name }}
                         <h4 class="my-2"> Modello: </h4>{{ car.modello }}
                         
-                        <h5 class="my-2"> Prezzo </h5>{{ car.prezzo }} 
+                        <h5 class="my-2"> Prezzo </h5>{{ car.prezzo }}€
                         
                         <!-- <p>{{createExcerpt() }}</p> -->
                     </div>
