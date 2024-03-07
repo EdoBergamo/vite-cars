@@ -31,18 +31,21 @@ export default {
 </script>
 <template lang="">
     <div class="col-lg-4 col-md-6 col-3 ">
-        <div class="card mt-4">
-            <img :src="getUrlImage()" alt="" class="card-img-top">
-                <div class="card-body">
-                    <h4> Nome Auto: </h4>{{ car.name }}
-                    <h4 class="my-2"> Modello: </h4>{{ car.modello }}
-                    
-                    <h5 class="my-2"> Prezzo </h5>{{ car.prezzo }} 
-                    
-                    
+        <router-link :to="{name: 'SingleCar', params: { id: car.id } }" >
+            <div class="card mt-4">
+                <img :src="getUrlImage()" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h4> Nome Auto: </h4>{{ car.name }}
+                        <h4 class="my-2"> Modello: </h4>{{ car.modello }}
+                        
+                        <h5 class="my-2"> Prezzo </h5>{{ car.prezzo }} 
+                        
+                        <!-- <p>{{createExcerpt() }}</p> -->
+                    </div>
                 </div>
+            </router-link> 
             </div>
-        </div>
+
    
 
 </template>
